@@ -18,6 +18,10 @@ PRODUCT_PACKAGES += \
 TARGET_SCREEN_HEIGHT := 2244
 TARGET_SCREEN_WIDTH := 1080
 
+# Charger
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/charger,root/res/images/charger)
+
 # Init
 PRODUCT_PACKAGES += \
     init.target.rc
