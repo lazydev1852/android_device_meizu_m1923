@@ -22,5 +22,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/vendor_fstab.qcom:$(TARGET_COPY_OUT_SYSTEM)/etc/vendor_fstab.qcom
 
+# LiveDisplay
+PRODUCT_PACKAGES += \
+    mokee.livedisplay@2.0-service-sdm
+
 # Inherit from sm6150-common
 $(call inherit-product, device/meizu/sm6150-common/common.mk)
