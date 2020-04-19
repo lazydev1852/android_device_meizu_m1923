@@ -11,6 +11,9 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-mokee
 
+PRODUCT_PACKAGES += \
+    NoCutoutOverlay
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2244
 TARGET_SCREEN_WIDTH := 1080
